@@ -1,0 +1,18 @@
+/* Variables can be defined via 3 keywords
+var
+let
+const
+
+let and const are restricted to a block scope. i.e they cannot be accessed outside the { } , while variables declared with var keyword can be accessed outside the block scope aswell.
+
+*/
+
+if (true) {
+  let blockLet = "Inside block";
+  const blockConst = "Also inside block";
+  var leakedVar = "Accessible outside";
+}
+
+console.log(leakedVar);  // Output: "Accessible outside"
+console.log(blockLet);   // ReferenceError: blockLet is not defined
+console.log(blockConst); // ReferenceError: blockConst is not defined
