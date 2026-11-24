@@ -10,12 +10,11 @@ function forLoop(){
 function boxPattern(){
 
     for (let i=0; i<5 ; i++){
+        let pattern = "";
         for(let j=0; j<4; j++){
-            let patter = ""
+            pattern += " *";
         }
-        console.log(" *")
-        pattern +=pattern;
-
+        console.log(pattern)
     }
 }
 
